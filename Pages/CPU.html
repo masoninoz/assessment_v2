@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html leng="en">
+<!--
+===============================
+    Title: CPU Webpage
+    Author: Mason Bell
+    Date: 18/5/2023
+    Version: 1.0
+
+    Image Authors:
+        Image 1: Witscad
+        Image 2: HardwareTimes
+===============================
+-->
+
+<head>
+    <title>CPU - Computer Class</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="icon" type="images/png" href="../Images/logo.png">
+    <script src="../JavaScript/NavigationBar.js"></script>
+</head>
+<body>
+
+    <nav id="navBar">
+        <a href="../Homepage.html">Home</a>
+        <a href="CPU.html">CPU</a>
+        <a href="Hardware.html">Hardware</a>
+        <a href="Software.html">Software</a>
+    </nav>
+
+    <img src="../Images/logo.png" width="5%" id="logo"></img>
+
+
+    <main span class="blackBackground borderless">
+
+        <table id="tableOfContents">
+            <tr>
+                <td><h3>Table of contents</h3></td>
+            </tr>
+            <tr>
+                <td><a href="#Overview">Overview</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="#ALU">Arithmetic-Logic Unit</a></td>
+            </tr>
+            <tr>
+                <td><a href="#CU">Control Unit</a></td>
+            </tr>
+            <tr>
+                <td><a href="#Register">Registers</a></td>
+            </tr>
+        </table>
+
+        <article class="article-text">
+            <p class="space1"></p>
+            <p class="space2"></p>
+
+            <h1>CPU</h1>
+
+            <p id="Overview" class="space1"></p> <!--Overview id used for linking in the table of contents-->
+
+            <p>
+                The CPU is the main processor inside of a computer,
+                it’s used to perform basic calculations to modify data.
+                This modification of data is the basis of all actions in a computer,
+                anything from writing text to calculating numbers or drawing images.
+                They can all be performed and modified from changing numbers. The CPU is
+                generally considered to be the brain of a computer, and controls most of the
+                operations inside of a computer. There are three main segments of a CPU that
+                each perform different functions.
+            </p>
+
+            <p class="space1"></p>
+
+            <h2 id="ALU">Arithmetic-Logic Unit</h2>
+            <p>
+                The arithmetic-logic unit performs basic arithmetic operations
+                on data taken from storage or input devices and can also compare
+                numbers and inputs to make decisions depending on the outcomes of
+                those comparisons. The ALU is given code, called operation code, from
+                the control unit of the CPU to provide the numbers to perform an operation
+                on and also what operation to perform on that data. The ALU can directly access
+                primary storage, such as RAM to retrieve or modify data stored on those devices.
+            </p>
+
+            <p class="space1"></p>
+
+            <h2 id="CU">Control Unit</h2>
+            <p>
+                The control unit coordinates inputs, outputs and data storage to and
+                from the CPU as well as organising the function of the CPU. The control
+                unit is responsible for causing the CPU to step through each instruction
+                of a program in time with the system clock with the clock acting as a
+                method of synchronising all the actions.
+            </p>
+            <div class="offsetImage">
+                <article>
+                    <p>
+                        The control unit takes instructions,
+                        stored inside the instruction register and causes the ALU to execute those
+                        instructions, then exports those outputs through data buses, which are a
+                        name for the paths for data transfer.
+                    </p>
+                </article>
+
+                <div>
+
+                    <img width="40%" src="https://res.cloudinary.com/witspry/image/upload/witscad/public/content/courses/computer-architecture/model-of-a-control-unit.png">
+
+                    <a href="https://witscad.com/course/computer-architecture/chapter/cpu-control-unit">Inputs and outputs of the Control Unit (Witscad)</a>
+                </div>
+
+            </div>
+
+            <p class="space1"></p>
+
+            <h2 id="Register">Registers</h2>
+            <p>
+                There are many different registers within the CPU,
+                used to hold small bits of data for different purposes.
+                Standardly, a register has the same number of bits as the
+                computer, for example, a 64x bit computer will have a 64x bit
+                register but this isn’t always the case. There are many different
+                types of registers, on register is the index register. The CPU
+                has several index registers which are used to store addresses
+                of data so that they can send information and receive data from
+                those addresses. Another type of register is the accumulator,
+                which is used to store the most recent calculation from a CPU,
+            </p>
+
+            <div class="offsetImage">
+                <div>
+
+                    <img width="40%" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hardwaretimes.com%2Fwp-content%2Fuploads%2F2020%2F02%2Fimage-137.png&f=1&nofb=1&ipt=49367db1442ca9297047ae2777ef7ea8495debbcb34c69765765f65dfb3e1ee2&ipo=images">
+
+                    <a href="https://www.hardwaretimes.com/what-is-a-processor-register-types-of-cpu-registers-and-functions-explained/">Outline of connections inside a CPU (HardwareTimes)</a>
+                </div>
+
+                <article>
+                    <p>
+                        another is the storage register which stores data to and from
+                        primary storage to be access by the CPU during it’s calculations
+                        and there is also the instruction register which holds the operations
+                        that need to be performed by the CPU. There are many other registers
+                        but these are the primary ones used by the CPU. In the diagram, the green boxes
+                        represent the various registers used inside the CPU.
+                    </p>
+                </article>
+
+
+
+            </div>
+
+            <p class="space1"></p>
+
+        </article>
+    </main>
+
+</body>
+</html>

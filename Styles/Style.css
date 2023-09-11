@@ -1,0 +1,215 @@
+/*
+===============================
+Title: Webpage Styles
+Author: Mason Bell
+Date: 18/5/2023
+Version: 1.0
+
+===============================
+*/
+
+
+@font-face {
+	font-family: JosefinSans;
+	src: url('../Fonts/JosefinSans.ttf');
+}
+
+@font-face {
+	font-family: PoltawskiNowy;
+	src: url('../Fonts/PoltawskiNowy.ttf');
+}
+
+/*Tags*/
+
+body::-webkit-scrollbar {
+  display: none; /*Used mainly in the homepage but also works ok on the main pages*/
+}
+
+body{
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	padding-left: -25vw;
+	font-family: PoltawskiNowy;
+}
+
+h2 {
+	text-align: center;
+	margin-left: 25vw;
+	margin-right: 15vw;
+	background-color: #1a1828;
+	border-radius: 50vw;
+}
+
+
+/*IDs*/
+
+
+#ParallaxImage img{
+	  position:absolute;
+	  margin-left: -10px;
+	  margin-top: -20px;
+	z-index: -1;
+}
+
+#logo{
+	position:fixed;
+
+	z-index: 6;
+
+	top: 0;
+	
+}
+
+#navBar {
+	font-size: 20px;
+	color: #fca311;
+	padding-top: -11px;
+	background-color: #161A1D;
+	width: 110%;
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	top: 5px;
+	margin-left: -10px;
+	margin-top: -10px;
+	z-index: 5;
+	
+}
+
+	#navBar a {
+		font-family: JosefinSans;
+		font-weight: 600;
+		padding-top: 25px;
+		padding-bottom: 20px;
+
+		text-decoration: none;
+		color: #fca311;
+		
+		padding-left: 8vw;
+	}
+
+
+#tableOfContents {
+	margin-top: 60vh;
+	margin-left: 1vw;
+
+	padding-right: 1vw;
+	padding-left: 1vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+
+	position: absolute; /*This is used to allow the table of contents to be alongside the main content of the page without using some strange flexbox layout or something along those line*/
+	z-index: 0;
+
+	border-right: solid;
+	background-color: #191e23;
+	border-radius: 5px;
+}
+
+#tableOfContents a{
+	
+	text-decoration: none;
+	color: white;
+
+}
+
+#tableOfContents td{
+	padding-bottom: 10px;
+}
+
+
+/*Classes*/
+
+
+.center-text {
+	text-align: center;
+}
+
+.article-text p, ul{
+	padding-left: 30vw;
+	padding-right: 20vw;
+ }
+
+
+
+.blackBackground{
+	
+	color: white;
+	font-size: 20px;
+	background-color: black;
+	margin-top: -40vw;
+	margin-right:-2.4vw;
+	z-index: 2;
+	margin-bottom: -2.6vh;
+	
+}
+
+.subHeading {
+	font-size: 30px;
+}
+
+.borderless{
+	margin-left: -10px;
+	margin-top: -20px;
+}
+
+.offsetImage {
+	display: flex;
+	margin-left: 29vw;	/*The margin is set to have a margin 1vw less than ordinary text so that both the image and text can have a 1vw margin themselves to seperate the text from the image. See below comment to see what I mean*/
+}
+
+.offsetImage p { /*Resets the padding set by the article-text class*/
+	
+	padding-left: 0vw;
+	padding-right: 0vw;
+}
+
+.offsetImage > article{ /*Standard text can take up 50% of the screen due to the article-text class, this makes the text aligned with the image take up 40% of that 50%*/
+	margin-left: 1vw;
+	
+	width: 19vw;
+}
+
+.offsetImage > div {
+	margin-left: 1vw;
+	
+	width: 30vw;
+	
+}
+
+	.offsetImage a {
+		
+		text-decoration: none;
+		color: red;
+	}
+
+	.offsetImage img { /*And the image takes up the other 10% of the screen so that the text + image will always stay aligned with ordinary text*/
+		/*Both the image and the div have their own 1vw margin so that when they are on the left side, their edge lines up with the edge of the text and so that the text can have a space between the image and the text.
+		Delete the margins in the image and div and change the margin of the offset image to 30 to see what I mean*/
+		
+		
+		width: 30vw;
+		background-color: #232328;
+		padding: 0.3vw;
+		border-radius: 5px;
+	}
+
+
+
+.screenSpace{
+	padding-top: 100vh;
+	
+}
+
+.space1{
+	padding-top: 100px;
+	
+}
+
+.space2 {
+	padding-top: 50px;
+}
